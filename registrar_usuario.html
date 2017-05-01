@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VenBitcoin</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+	<style>
+		div{
+			margin: 100px;
+		}
+		div label{
+			float: left;
+			width: 15%;
+		}
+		input{
+			border: solid 2px black;
+		}
+	</style>
+
+	<script>
+	function comprobarClave(){
+	  clave1 = document.probar.clave1.value
+	  clave2 = document.probar.clave2.value
+
+	   if (clave1 == clave2)
+	     alert("Las claves son iguales...")
+	   else
+	      alert("Las claves NO iguales...")
+	}
+	function comprobarClave(){
+	  clave1 = document.probar.clave1.value
+	  clave2 = document.probar.clave2.value
+
+	   if (clave1 == clave2)
+	     alert("Las claves son iguales...")
+	   else
+	      alert("Las claves NO iguales...")
+	}
+	</script>
+</head>
+
+
+<body>
+
+	<div class="container">
+	<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+
+<center><img src="bitcoin/logoVenBitcoin.png" alt="VenBitcoin" style="width:700px;height:200px;"> </center>
+
+           <h1 style="text-align:center;">Registrarse como usuario</h1>
+	<form id="formulario" action="php_pgadmin4.php" name="fomulariousuario" method="post">
+
+	<fieldset> 
+	    <legend>Formulario de Ejemplo</legend>
+		<label> Nombre  </label>
+	    <input id="campo1" name="nombre" type="text" placeholder="Nombre" /><br>
+       <label> Apellido  </label>
+  		<input id="campo2" name="apellido" type="text" placeholder="Apellido"/><br>
+       <label> Email  </label>	        
+	    <input id="campo3" name="correo" type="text" placeholder="Email"/><br>
+       <label> Telefono  </label>	        
+	    <input id="campo6" name="telefono" type="text" placeholder="Telefono"/><br>	
+       <label> contraseña </label>
+	    <input id="campo4"  type="password" name="clave1" placeholder="Password"/><br>
+		<label>repetir contraseña  </label>     
+   		<input id="campo5"  type="password"  name="clave2" placeholder="Password(Repetir)" /><br>
+		<input type="button" value="Comprobar si son iguales" onClick="comprobarClave()"/><br><br>
+  		<input id="campo8" name="enviar" type="submit" value="Registrarse" />
+
+	</fieldset>
+	</form>
+
+	</div>
+	</div>
+	</div>
+
+</body>
+
+</html>
+
