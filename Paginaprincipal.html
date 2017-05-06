@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+    <title>VenBitcoin</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="clave.js"></script>
+    <meta charset="UTF-8">
+
+  </head>
+
+<body>
+
+  <div class="container">
+  <div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+
+
+  <form action="prueba.html" class="registro" name="probar" method="post" >
+
+  <h1 class="registro__titulo">VenBitcoin</h1><br><br>
+
+  <input name="nombre" type="text" class="registro__input" >
+  <label for="" class="registro__label" >Nombres</label>
+
+  <input name="apellido" type="text" class="registro__input">
+  <label for="" class="registro__label">Apellidos</label>
+
+  <input name="correo" type="email" class="registro__input">
+  <label for="" class="registro__label">Correo</label>
+
+  <input name="telefono" type="tel" class="registro__input" pattern="[0-9]{11}">
+  <label for="" class="registro__label">Teléfono</label>
+
+  <input name="pass1" type="password" class="registro__input" id="clave1" value="">
+  <label for="pass1" class="registro__label">Contraseña:</label>
+  
+  <input name="pass2" type="password" class="registro__input" id="clave2" value="" >
+  <label for="pass2" class="registro__label">Contraseña(Repetir)&nbsp;&nbsp;
+  <div  id="error1" ></div>
+  </label>
+
+  <input type="submit" value="Registrarse" class="registro__submit">
+
+
+  </form>
+  	<form action="iniciar_sesion.html" class="iniciar_sesion" name="iniciar_sesion">
+	  <input type="submit" value="Iniciar Sesión" class="iniciar_sesion__submit">
+	</form>
+
+  </div>
+  </div>
+  </div>
+
+	<script src="registro.js"></script>
+	<script src="iniciar_sesion.js"></script>
+	</body>
+
+</html>
